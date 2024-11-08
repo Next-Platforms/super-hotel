@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Hotel</title>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              1500: { max: "1500px" },
+              1450: { max: "1450px" },
+              1400: { max: "1400px" },
+              1350: { max: "1350px" },
+              1300: { max: "1300px" },
+              1250: { max: "1250px" },
+              1200: { max: "1200px" },
+              1150: { max: "1150px" },
+              1100: { max: "1100px" },
+              1050: { max: "1050px" },
+              1000: { max: "1000px" },
+              950: { max: "950px" },
+              900: { max: "900px" },
+              850: { max: "850px" },
+              800: { max: "800px" },
+              750: { max: "750px" },
+              700: { max: "700px" },
+              650: { max: "650px" },
+              600: { max: "600px" },
+              550: { max: "550px" },
+              500: { max: "500px" },
+              450: { max: "450px" },
+              400: { max: "400px" },
+              350: { max: "350px" },
+              300: { max: "300px" },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <main class="flex flex-col">
+      <div
+        style="background-image: url('/assets/images/hero-bg.png')"
+        class="hero-bg bg-cover bg-center z-[10] absolute top-0 left-0 right-0 750:hidden"
+      ></div>
+
+      <div class="flex flex-col z-[20]">
+        <!-- Header Start -->
+        <header class="px-[35px] pt-[35px] 750:pb-[35px] 750:mx-auto">
+          <img src="/assets/images/logo.svg" alt="Logo" class="h-[52px]" />
+        </header>
+        <!-- Header End -->
+
+        <!-- Hero Section Start -->
+        <div class="750:bg-[#f4bb5f]">
+          <section class="wrapper mt-[150px] 1000:mt-[100px] 750:!my-[40px]">
+            <div
+              class="flex 750:flex-col 750:w-[80%] 550:!w-full 750:mx-auto gap-[40px]"
+            >
+              <div
+                class="flex-1 750:flex-none rounded-[40px] overflow-hidden border border-[5px] border-black p-[5px] bg-white 750:h-[350px] 550:!h-[250px]"
+                style="box-shadow: -15px 15px 0px 0px rgba(255, 177, 64, 1)"
+              >
+                <iframe
+                  class="w-full h-full rounded-[40px]"
+                  src="https://www.youtube.com/embed/VbF3lmZ-wY4?autoplay=1&mute=1&loop=1&playlist=VbF3lmZ-wY4"
+                  title="【フリー素材】 エフェクト背景 球 - Effect BG Sphere [Free Footage]"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+              </div>
+              <div class="flex-1 flex flex-col">
+                <img src="/assets/images/main01.png" />
+                <div
+                  class="flex items-center justify-center gap-[20px] mt-[40px]"
+                >
+                  <a
+                    href="https://play.google.com/store/apps/details?id=jp.co.superhotel.reservation&hl=en_IN&pli=1"
+                    target="_blank"
+                  >
+                    <img
+                      src="/assets/images/GetItOnGooglePlay_Badge_Web_color_Japanese.png"
+                      class="max-h-[60px]"
+                    />
+                  </a>
+                  <a
+                    href="https://apps.apple.com/us/app/superhotel/id542158619"
+                    target="_blank"
+                  >
+                    <img
+                      src="/assets/images/Asset 35 copy.png"
+                      class="max-h-[60px]"
+                    />
+                  </a>
+                </div>
+                <div class="mt-[40px]">
+                  <img src="/assets/images/main02.png" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex 750:flex-col 750:w-[80%] 550:!w-full 750:mx-auto items-center gap-[40px] mt-[40px] 750:mt-[20px]"
+            >
+              <div>
+                <img src="/assets/images/main03.png" />
+              </div>
+              <div>
+                <img src="/assets/images/main04.png" />
+              </div>
+            </div>
+            <div class="w-[60%] 750:w-[80%] 550:!w-full mx-auto mt-[40px]">
+              <a href="#campaign" class="hover:opacity-70 block transition-all">
+                <img src="/assets/images/hero-button.png" />
+              </a>
+            </div>
+            <div class="max-w-max mx-auto mt-[40px]">
+              <img src="/assets/images/scroll.svg" class="w-[30px]" />
+            </div>
+          </section>
+        </div>
+        <!-- Hero Section End -->
+
+        <!-- Advertisement Section Start -->
+        <section
+          class="wrapper flex 750:flex-col gap-[60px] 1000:gap-[40px] pb-[40px] 750:pt-[40px]"
+        >
+          <div
+            class="flex-[0.8] 750:flex-none 750:w-[80%] 750:mr-auto mt-[350px] 1000:mt-[300px] 750:!mt-0 750:order-3"
+          >
+            <img src="/assets/images/img02@2x.png" class="750:w-full" />
+          </div>
+          <div
+            class="flex-1 mt-[150px] 750:mt-0 750:w-[80%] 550:!w-full 750:mx-auto flex flex-col gap-[20px] justify-between 750:order-1"
+          >
+            <div class="flex flex-col gap-[20px]">
+              <div>
+                <img src="/assets/images/h2_point@2x.png" />
+              </div>
+              <div>
+                <img src="/assets/images/adv.png" />
+              </div>
+              <div class="flex items-center justify-center gap-[20px]">
+                <a
+                  href="https://play.google.com/store/apps/details?id=jp.co.superhotel.reservation&hl=en_IN&pli=1"
+                  target="_blank"
+                >
+                  <img
+                    src="/assets/images/GetItOnGooglePlay_Badge_Web_color_Japanese.png"
+                    class="max-h-[60px]"
+                  />
+                </a>
+                <a
+                  href="https://apps.apple.com/us/app/superhotel/id542158619"
+                  target="_blank"
+                >
+                  <img
+                    src="/assets/images/Asset 35 copy.png"
+                    class="max-h-[60px]"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="750:hidden">
+              <img src="/assets/images/h2_commitment@2x.png" />
+            </div>
+          </div>
+          <div
+            class="flex-[0.8] 750:flex-none 750:w-[80%] 750:ml-auto 1000:mt-[80px] 750:!mt-0 750:order-2"
+          >
+            <img src="/assets/images/img01.png" class="750:w-full" />
+          </div>
+        </section>
+        <!-- Advertisement Section End -->
+
+        <!-- Commitment Section Start -->
+        <section
+          class="flex flex-col pb-[120px] 1200:pb-[80px] 750:!pb-[130px]"
+        >
+          <div class="wrapper mb-[40px] hidden 750:block">
+            <div class="w-[80%] 550:w-full mx-auto">
+              <img src="/assets/images/h2_commitment@2x.png" />
+            </div>
+          </div>
+          <div class="w-[80%] 750:w-[90%] ml-auto 750:mx-auto flex flex-col">
+            <div
+              class="flex 750:flex-col items-center gap-[10px] mb-[20px] z-[2]"
+            >
+              <div class="flex h-[85px] 750:w-[60%] 550:!w-[100%]">
+                <img src="/assets/images/commitment01.svg" class="h-full" />
+              </div>
+              <div class="flex h-[50px] 750:h-auto 750:w-[60%] 550:!w-[100%]">
+                <img
+                  src="/assets/images/title01_pc@2x.png"
+                  class="w-full h-full 750:hidden"
+                />
+                <img
+                  src="/assets/images/title01_sp@2x.png"
+                  class="w-full h-full hidden 750:block"
+                />
+              </div>
+            </div>
+            <div
+              class="flex 750:flex-col-reverse items-center gap-[40px] 750:gap-[20px]"
+            >
+              <div class="flex-1 flex flex-col gap-[20px]">
+                <h2 class="flex flex-col text-[30px]">
+                  <b>8種類の枕から</b>
+                  <div>
+                    <b class="border-b-[4px] border-[#FFDC6C]"
+                      >自分に合ったもの</b
+                    >
+                    <b>をお選び頂けます</b>
+                  </div>
+                </h2>
+                <div>
+                  <p>
+                    当ホテルでは<b>「ぐっすり眠れる」</b>をコンセプトにしており、快眠をサポートするための特別な8種類の枕をご用意しております。
+                  </p>
+                  <p>
+                    また、枕だけではなく体の負担の少ないマットレス、調湿・消臭効果のある珪藻土の設置、健康イオン水の全館給水など、お客様の「ぐっすり」を提供できるよう自然を活用した心地よいリラックス空間をご用意しております。
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col relative">
+                <div
+                  class="w-[40%] absolute top-[-35%] 750:top-[-25%] left-[50%] 750:left-[60%] z-[1]"
+                >
+                  <img src="/assets/images/circle.png" />
+                </div>
+                <div class="z-[2]">
+                  <img src="/assets/images/commitment01_img@2x.png" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex 750:flex-col items-center gap-[10px] mt-[40px] mb-[20px] z-[2]"
+            >
+              <div class="flex h-[85px] 750:w-[60%] 550:!w-[100%]">
+                <img src="/assets/images/commitment02.svg" class="h-full" />
+              </div>
+              <div class="flex h-[50px] 750:h-auto 750:w-[60%] 550:!w-[100%]">
+                <img
+                  src="/assets/images/title02_pc@2x.png"
+                  class="w-full h-full 750:hidden"
+                />
+                <img
+                  src="/assets/images/title02_sp@2x.png"
+                  class="w-full h-full hidden 750:block"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[80%] 750:w-[90%] mr-auto 750:mx-auto flex flex-col mb-[40px]"
+          >
+            <div
+              class="flex 750:flex-col-reverse items-center gap-[40px] 750:gap-[20px]"
+            >
+              <div class="flex-1 flex flex-col relative">
+                <div
+                  class="w-[40%] absolute bottom-[-30%] 750:bottom-[-25%] right-[50%] 750:right-[60%] z-[1]"
+                >
+                  <img src="/assets/images/circle.png" />
+                </div>
+                <div class="z-[2]">
+                  <img src="/assets/images/commitment02_img@2x.png" />
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col gap-[20px]">
+                <h2 class="flex flex-col text-[30px]">
+                  <div>
+                    <b>天然温泉で</b>
+                    <b class="border-b-[4px] border-[#FFDC6C]">
+                      本物の心地よさ
+                    </b>
+                    <b>と</b>
+                  </div>
+                  <b>リラックスを</b>
+                </h2>
+                <div>
+                  <p>1日の疲れを落とすなら「湯船にゆったり浸かる」こと。</p>
+                  <p>
+                    特に温泉は温浴によるリラクゼーション効果に加え、お湯の中に溶け込んだ成分が疲労回復や美肌など様々な効果をもたらしてくれます。
+                  </p>
+                  <p>
+                    当ホテルでは、お客様の健康と安眠のために、各店舗で天然温泉や高濃度炭酸泉の導入をすすめています。
+                    <b
+                      >水道水のお風呂にはない、本物の心地良さとリラックスをどうぞお楽しみください。</b
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[80%] 750:w-[90%] ml-auto 750:mx-auto flex flex-col">
+            <div
+              class="flex 750:flex-col items-center gap-[10px] mb-[20px] z-[2]"
+            >
+              <div class="flex h-[85px] 750:w-[60%] 550:!w-[100%]">
+                <img src="/assets/images/commitment03.svg" class="h-full" />
+              </div>
+              <div class="flex h-[50px] 750:h-auto 750:w-[60%] 550:!w-[100%]">
+                <img
+                  src="/assets/images/title03_pc@2x.png"
+                  class="w-full h-full 750:hidden"
+                />
+                <img
+                  src="/assets/images/title03_sp@2x.png"
+                  class="w-full h-full hidden 750:block"
+                />
+              </div>
+            </div>
+            <div
+              class="flex 750:flex-col-reverse items-center gap-[40px] 750:gap-[20px]"
+            >
+              <div class="flex-1 flex flex-col gap-[20px]">
+                <h2 class="flex flex-col text-[30px]">
+                  <b>オーガニックでヘルシーな朝食で </b>
+                  <div>
+                    <b class="border-b-[4px] border-[#FFDC6C]"
+                      >エネルギッシュな朝を</b
+                    >
+                  </div>
+                </h2>
+                <div>
+                  <p>
+                    当ホテルでは「お客様に元気な1日をスタートしていただきたい」そんな思いから、朝食にもこだわっています。
+                  </p>
+                  <p>
+                    朝からオーブンで焼き上げたサクサクのパンや、環境と健康に配慮したオーガニック野菜、農薬を半分以下に抑えた特別栽培米など、とにかく健康にこだわった朝食を無料で提供しております。
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col relative">
+                <div
+                  class="w-[40%] absolute top-[-35%] 750:top-[-25%] left-[50%] 750:left-[60%] z-[1]"
+                >
+                  <img src="/assets/images/circle.png" />
+                </div>
+                <div class="z-[2]">
+                  <img src="/assets/images/commitment03_img@2x.png" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex 750:flex-col items-center gap-[10px] mt-[40px] mb-[20px] z-[2]"
+            >
+              <div class="flex h-[85px] 750:w-[60%] 550:!w-[100%]">
+                <img src="/assets/images/commitment04.svg" class="h-full" />
+              </div>
+              <div class="flex h-[100px] 750:h-auto 750:w-[60%] 550:!w-[100%]">
+                <img
+                  src="/assets/images/title04_pc@2x.png"
+                  class="w-full h-full 750:hidden"
+                />
+                <img
+                  src="/assets/images/title04_sp@2x.png"
+                  class="w-full h-full hidden 750:block"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="w-[80%] 750:w-[90%] mr-auto 750:mx-auto flex flex-col">
+            <div
+              class="flex 750:flex-col-reverse items-center gap-[40px] 750:gap-[20px]"
+            >
+              <div class="flex-1 flex flex-col relative">
+                <div
+                  class="w-[40%] absolute bottom-[-30%] 750:bottom-[-25%] right-[50%] 750:right-[60%] z-[1]"
+                >
+                  <img src="/assets/images/circle.png" />
+                </div>
+                <div class="z-[2]">
+                  <img src="/assets/images/commitment04_img@2x.png" />
+                </div>
+              </div>
+              <div class="flex-1 flex flex-col gap-[20px]">
+                <h2 class="flex flex-col text-[30px]">
+                  <b>エコとスマートさを追求した</b>
+                  <div>
+                    <b class="border-b-[4px] border-[#FFDC6C]">
+                      宿泊システム
+                    </b>
+                  </div>
+                </h2>
+                <div>
+                  <p>
+                    当ホテルではノーキー・ノーチェックアウトシステムを導入し、チェックインは自動精算機で行え、お部屋は暗証番号で開錠可能です。
+                  </p>
+                  <p>
+                    鍵を無くすことでチェックアウトも不要となり、チェックインもタブレット端末で行うことでペーパーレスを実現しました。
+                  </p>
+                  <p>エコさとスマートさの追求が、地球を優しく元気にします。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Commitment Section End -->
+
+        <!-- Other Section Start -->
+        <section
+          style="background-image: url('/assets/images/others_bg_pc.png')"
+          class="py-[40px] bg-cover bg-center"
+        >
+          <div class="wrapper flex flex-col gap-[20px]">
+            <div class="mx-auto">
+              <img src="/assets/images/h2_others@2x.png" class="w-[550px]" />
+            </div>
+            <div class="mx-auto">
+              <img src="/assets/images/other-h3.svg" class="w-[350px]" />
+            </div>
+            <div class="flex items-center justify-center gap-[20px]">
+              <a
+                href="https://play.google.com/store/apps/details?id=jp.co.superhotel.reservation&hl=en_IN&pli=1"
+                target="_blank"
+              >
+                <img
+                  src="/assets/images/GetItOnGooglePlay_Badge_Web_color_Japanese.png"
+                  class="max-h-[60px]"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/us/app/superhotel/id542158619"
+                target="_blank"
+              >
+                <img
+                  src="/assets/images/Asset 35 copy.png"
+                  class="max-h-[60px]"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- Other Section End -->
+
+        <!-- Campaign Section Start -->
+        <section class="py-[40px]" id="campaign">
+          <div
+            class="bg-[#F9F1E8] rounded-[30px] w-[60%] 750:w-[90%] mx-auto p-[40px] flex flex-col gap-[40px]"
+          >
+            <div>
+              <img
+                src="/assets/images/campaign-headings.svg"
+                class="750:hidden"
+              />
+              <img
+                src="/assets/images/campaign-headings-mobile.svg"
+                class="hidden 750:block"
+              />
+            </div>
+            <div class="h-[1px] bg-[#EADCCE]"></div>
+            <div class="flex flex-col gap-[10px] text-[24px] 750:text-[18px]">
+              <b class="text-center">＜応募方法＞</b>
+              <div class="flex flex-col gap-[5px] max-w-max mx-auto">
+                <b class="">①まずは公式アプリをインストールして、会員登録！</b>
+                <b class="">②アプリ画面から、応募画面をタップ！</b>
+                <b class="">③応募フォームより、</b>
+                <b class="">・会員番号（会員登録時に発行されます）</b>
+                <b class="">・氏名</b>
+                <b class="">・住所（商品の発送に必要となります）</b>
+                <b class="">をご入力頂くだけで、カンタン1分で応募完了！</b>
+              </div>
+            </div>
+            <div class="mx-auto">
+              <img src="/assets/images/campaign01@2x.png" class="w-[500px]" />
+            </div>
+            <div class="flex items-center justify-center gap-[20px]">
+              <a
+                href="https://play.google.com/store/apps/details?id=jp.co.superhotel.reservation&hl=en_IN&pli=1"
+                target="_blank"
+              >
+                <img
+                  src="/assets/images/GetItOnGooglePlay_Badge_Web_color_Japanese.png"
+                  class="max-h-[60px]"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/us/app/superhotel/id542158619"
+                target="_blank"
+              >
+                <img
+                  src="/assets/images/Asset 35 copy.png"
+                  class="max-h-[60px]"
+                />
+              </a>
+            </div>
+            <div>
+              <img src="/assets/images/campaign02@2x.png" />
+            </div>
+          </div>
+        </section>
+        <!-- Campaign Section End -->
+
+        <!-- Footer Start -->
+        <footer class="pt-[40px] pb-[20px] bg-[#FFBD52]">
+          <div class="wrapper flex flex-col gap-[20px]">
+            <div class="mx-auto">
+              <img src="/assets/images/footer-heading.svg" class="w-[400px]" />
+            </div>
+            <div class="mx-auto w-[500px]">
+              <img src="/assets/images/adv.png" />
+            </div>
+            <div class="flex items-center justify-center gap-[20px]">
+              <a
+                href="https://play.google.com/store/apps/details?id=jp.co.superhotel.reservation&hl=en_IN&pli=1"
+                target="_blank"
+              >
+                <img
+                  src="/assets/images/GetItOnGooglePlay_Badge_Web_color_Japanese.png"
+                  class="max-h-[60px]"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/us/app/superhotel/id542158619"
+                target="_blank"
+              >
+                <img
+                  src="/assets/images/Asset 35 copy.png"
+                  class="max-h-[60px]"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="wrapper mt-[60px]">
+            <p
+              class="text-center text-[16px] 750:text-[14px] text-[#fff] block"
+            >
+              ©2024 SUPER HOTEL. Co.,ltd.
+            </p>
+          </div>
+        </footer>
+        <!-- Footer End -->
+      </div>
+    </main>
+  </body>
+</html>
