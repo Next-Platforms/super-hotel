@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const imageWrappers = document.querySelectorAll(
+  const imageWrappers_1 = document.querySelectorAll(
     "#advertisement .image-wrapper"
+  );
+  const imageWrappers_2 = document.querySelectorAll(
+    "#commitment .image-wrapper"
   );
   const observer = new IntersectionObserver(
     (entries) => {
@@ -14,7 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     { threshold: 0.1 }
   );
-  imageWrappers.forEach((wrapper) => {
+  imageWrappers_1.forEach((wrapper) => {
+    observer.observe(wrapper);
+  });
+  imageWrappers_2.forEach((wrapper) => {
     observer.observe(wrapper);
   });
 });
