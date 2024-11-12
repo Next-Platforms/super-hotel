@@ -131,10 +131,11 @@
 
         <!-- Advertisement Section Start -->
         <section
+          id="advertisement"
           class="wrapper flex 750:flex-col gap-[60px] 1000:gap-[40px] pb-[40px] 750:pt-[40px]"
         >
           <div
-            class="flex-[0.8] 750:flex-none 750:w-[80%] 750:mr-auto mt-[350px] 1000:mt-[300px] 750:!mt-0 750:order-3"
+            class="flex-[0.8] 750:flex-none 750:w-[80%] 750:mr-auto mt-[350px] 1000:mt-[300px] 750:!mt-0 750:order-3 image-wrapper opacity-0 translate-y-20 transition duration-[1500ms] ease-out"
           >
             <img src="./assets/images/img02@2x.png" class="750:w-full" />
           </div>
@@ -142,16 +143,21 @@
             class="flex-1 mt-[150px] 750:mt-0 750:w-[80%] 550:!w-full 750:mx-auto flex flex-col gap-[20px] justify-between 750:order-1"
           >
             <div class="flex flex-col gap-[20px]">
-              <div>
+              <div
+                class="image-wrapper opacity-0 translate-y-20 transition duration-[1500ms] ease-out"
+              >
                 <img src="./assets/images/h2_point@2x.png" />
               </div>
-              <div>
+              <div
+                class="image-wrapper opacity-0 translate-y-20 transition duration-[1500ms] ease-out"
+              >
                 <img src="./assets/images/adv.png" />
               </div>
               <div class="flex items-center justify-center gap-[20px]">
                 <a
                   href="https://play.google.com/store/apps/details?id=jp.co.superhotel.reservation&hl=en_IN&pli=1"
                   target="_blank"
+                  class="image-wrapper opacity-0 translate-y-20 transition duration-[1500ms] ease-out"
                 >
                   <img
                     src="./assets/images/GetItOnGooglePlay_Badge_Web_color_Japanese.png"
@@ -161,6 +167,7 @@
                 <a
                   href="https://apps.apple.com/us/app/superhotel/id542158619"
                   target="_blank"
+                  class="image-wrapper opacity-0 translate-y-20 transition duration-[1500ms] ease-out"
                 >
                   <img
                     src="./assets/images/Asset 35 copy.png"
@@ -174,7 +181,7 @@
             </div>
           </div>
           <div
-            class="flex-[0.8] 750:flex-none 750:w-[80%] 750:ml-auto 1000:mt-[80px] 750:!mt-0 750:order-2"
+            class="flex-[0.8] 750:flex-none 750:w-[80%] 750:ml-auto 1000:mt-[80px] 750:!mt-0 750:order-2 image-wrapper opacity-0 translate-y-20 transition duration-[1500ms] ease-out"
           >
             <img src="./assets/images/img01.png" class="750:w-full" />
           </div>
@@ -682,5 +689,8 @@
         <!-- Footer End -->
       </div>
     </main>
+
+    <!-- Main Script -->
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
