@@ -51,16 +51,22 @@
         class="hero-bg bg-cover bg-center z-[10] absolute top-0 left-0 right-0 750:hidden"
       ></div>
 
-      <div class="flex flex-col z-[20]">
-        <!-- Header Start -->
-        <header class="px-[35px] pt-[35px] 750:pb-[35px] 750:mx-auto">
-          <img src="./assets/images/logo.svg" alt="Logo" class="h-[52px]" />
-        </header>
-        <!-- Header End -->
+      <div class="flex flex-col z-[20] relative">
+        <img
+          src="./assets/images/hero-top.svg"
+          class="hero-top hidden 750:block z-[1]"
+        />
+        <div class="header-hero 750:bg-[#FFAF3B] flex flex-col relative">
+          <!-- Header Start -->
+          <header class="px-[35px] pt-[35px] 750:pb-[35px] 750:mx-auto z-[2]">
+            <img src="./assets/images/logo.svg" alt="Logo" class="h-[52px]" />
+          </header>
+          <!-- Header End -->
 
-        <!-- Hero Section Start -->
-        <div class="750:bg-[#f4bb5f]">
-          <section class="wrapper mt-[150px] 1000:mt-[100px] 750:!my-[40px]">
+          <!-- Hero Section Start -->
+          <section
+            class="wrapper mt-[150px] 1000:mt-[100px] 750:!mt-[40px] 750:!mb-[80px] z-[2]"
+          >
             <div
               class="flex 750:flex-col 750:w-[80%] 550:!w-full 750:mx-auto gap-[40px]"
             >
@@ -126,6 +132,10 @@
               <img src="./assets/images/scroll.svg" class="w-[30px]" />
             </div>
           </section>
+          <img
+            src="./assets/images/hero-bottom.svg"
+            class="hero-bottom hidden 750:block z-[1]"
+          />
         </div>
         <!-- Hero Section End -->
 

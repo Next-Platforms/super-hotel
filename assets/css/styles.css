@@ -67,3 +67,68 @@ body {
     height: 1350px;
   }
 }
+
+.hero-top {
+  width: 100%;
+  position: absolute;
+  top: -160px;
+  left: 0;
+  right: 0;
+}
+@media only screen and (max-width: 700px) {
+  .hero-top {
+    top: -140px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .hero-top {
+    top: -120px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero-top {
+    top: -100px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .hero-top {
+    top: -80px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero-top {
+    top: -60px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .hero-top {
+    top: -40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .hero-top {
+    top: -20px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .hero-top {
+    top: 0;
+  }
+}
+
+.hero-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+
+/* @media only screen and (max-width: 750px) {
+  .header-hero {
+    background-image: url("../images/main_bg_pc@2x.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+} */
