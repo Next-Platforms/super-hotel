@@ -17,10 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     { threshold: 0.1 }
   );
-  imageWrappers_1.forEach((wrapper) => {
-    observer.observe(wrapper);
-  });
-  imageWrappers_2.forEach((wrapper) => {
+  [...imageWrappers_1, ...imageWrappers_2].forEach((wrapper) => {
     observer.observe(wrapper);
   });
 });
